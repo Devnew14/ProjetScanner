@@ -47,10 +47,3 @@ Port ouvert : 5000
 
 Ici, 5000 est juste un exemple de port générique utilisé dans beaucoup de démonstrations.
 
-📁 Contenu du projet
-ProjetScanner/
-│
-├── Scanner_ports.py       → Scanner de ports principal
-├── test_port_8000.py      → Petit script test (utilise un port d’exemple)
-├── exemple_logs.md        → Exemple de résultats (fichier démonstration)
-└── README.md              → Documentation du projet
