@@ -1,20 +1,56 @@
-# 🔍 Mini Scanner de Ports en Python
+🔍 Mini Scanner de Ports en Python
 
-Ce projet est un petit scanner de ports éducatif écrit en Python.  
-Il permet de tester si certains ports d’une machine locale ou du réseau sont ouverts.
+Petit projet éducatif permettant de scanner des ports TCP sur une machine locale ou un hôte du réseau.
+Il est conçu pour être simple à comprendre, à modifier et à utiliser.
 
-> ⚠️ **Usage légal uniquement**  
-> Ce scanner ne doit être utilisé que sur vos propres machines ou sur celles pour lesquelles vous avez une autorisation explicite.
+⚠️ Utilisation légale
 
----
+Ce scanner doit uniquement être utilisé sur :
 
-## 🧠 Fonctionnement
+vos propres machines
 
-Le script tente d'établir une connexion TCP sur une liste de ports.  
-Si la connexion réussit → le port est considéré comme **ouvert**.  
-Si la connexion échoue → le port est **fermé**.
+des machines pour lesquelles vous avez une autorisation explicite
 
-Il utilise le module standard Python :
+Scanner des machines sans autorisation est illégal.
 
-```python
+🧠 Comment ça fonctionne ?
+
+Le script tente d’ouvrir une connexion TCP vers chaque port ciblé.
+
+✔️ Si la connexion réussit : le port est considéré ouvert
+
+❌ Si la connexion échoue : le port est fermé
+
+Il utilise uniquement le module Python standard :
+
 import socket
+
+
+Ce qui rend le script compatible avec n’importe quelle installation Python.
+
+▶️ Exemple d'utilisation
+
+Dans un terminal :
+
+python Scanner_ports.py
+
+
+Puis entrez une IP :
+
+IP à scanner : 127.0.0.1  (localhost)
+
+
+Exemple de sortie (avec un port fictif) :
+
+Port ouvert : 5000
+
+
+Ici, 5000 est juste un exemple de port générique utilisé dans beaucoup de démonstrations.
+
+📁 Contenu du projet
+ProjetScanner/
+│
+├── Scanner_ports.py       → Scanner de ports principal
+├── test_port_8000.py      → Petit script test (utilise un port d’exemple)
+├── exemple_logs.md        → Exemple de résultats (fichier démonstration)
+└── README.md              → Documentation du projet
