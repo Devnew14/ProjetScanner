@@ -13,7 +13,7 @@ def scan_port(ip, port):   #on cree une fonciton qui teste un seul port sur une 
 
 ip = input("IP à scanner : ")
 
-for port in range(1, 101):  # scan des ports 1 à 100
+for port in range(1, 1001):  # scan des ports 1 à 100
     if scan_port(ip, port):
         print(f"Port ouvert : {port}")
 
