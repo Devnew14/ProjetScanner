@@ -6,7 +6,9 @@ port = 8000
 sock = socket.socket()
 sock.settimeout(0.2)
 
-try:
+
+# ajout de try , except
+try:  
     sock.connect((ip, port))
     print("Port 8000 ouvert !")
 except:
