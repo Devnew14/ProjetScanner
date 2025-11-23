@@ -3,6 +3,8 @@ import socket
 ip = "127.0.0.1"
 port = 8000
 
+
+# Exemple de socket
 sock = socket.socket()
 sock.settimeout(0.2)
 
