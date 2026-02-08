@@ -8,17 +8,13 @@ Il est conçu pour être simple à comprendre, à modifier et à utiliser.
 Ce scanner doit uniquement être utilisé sur :
 
 vos propres machines
-
 des machines pour lesquelles vous avez une autorisation explicite
-
 Scanner des machines sans autorisation est illégal.
 
 🧠 Comment ça fonctionne ?
 
 Le script tente d’ouvrir une connexion TCP vers chaque port ciblé.
-
 ✔️ Si la connexion réussit : le port est considéré ouvert
-
 ❌ Si la connexion échoue : le port est fermé
 
 Il utilise uniquement le module Python standard :
